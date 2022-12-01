@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Images and responsiveness in HTML</title>
+    </head>
+    <body>
+        <img src="https://d3gmywgj71m21w.cloudfront.net/5cf2479a2a7995f728c5c378ac709d70" alt="Ma'am"
+        width="1900px" height="1500px" 
+        srcset="image.jpg 480px
+                image.jpg 800w
+                image.jpg 1200w"
+        sizes="(max-width: 480px) 240px,
+               (max-width: 960) 480px,
+               (max-width: 1440px) 960px"
+        >
+        <picture>
+            <source media="(max-width: 600px)" srcset="https://www.w3schools.com/html/pic_trulli.jpg">
+            <source media="(max-width: 600px)" srcset="https://www.w3schools.com/html/img_car.jpg">
+            <img src="image.jpg" alt="">
+        </picture> 
+
+        <!---Image Mapping--->
+        <img src="https://d3gmywgj71m21w.cloudfront.net/5cf2479a2a7995f728c5c378ac709d70" alt="Ma'am" usemap="ma'amlover">
+
+        <map name="ma'amlover">
+            <area shape="circle" coords="34, 44, 270, 350" href="specs.html" alt="specs">
+        </map>
+    </body>
+</html>
